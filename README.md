@@ -36,3 +36,30 @@ In this project, I'm using the Blog Schema Temmplate.
 - Category
 
 All our content lives in the cloud. We call this, the "Content Lake"
+
+## Studio Plugins
+
+### Vision Plugin
+
+To install run
+
+```bash
+npm i @sanity/vision/latest
+```
+
+Then add this code to the import section in "sanity.config.ts" file
+
+```typescript
+import { visionTool } from "@sanity/vision";
+```
+
+Vision Plugin is a Studio Playground for qerying our content
+After installing the Vision Plugin you'll use Groq / GraphQL to fetch data. In this case, we'll use Groq
+
+## Query Language GROQ(Graph-Relational Object Queries)
+
+See Groq documentation here [Groq Documentation](https://www.sanity.io/docs/groq)
+
+Running ` *` fetches everything
+
+Running ` *[_type == "post"]` fetches posts. Note: If a post was in draft mode it will count it and show it as a draft
