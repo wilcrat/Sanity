@@ -11,6 +11,6 @@ Beyond that, Sanity gives you total composability. A fully decoupled, real-time 
 
 Run
 
-```npm create sanity@latest
-
+```
+npm create sanity@latest
 ```
